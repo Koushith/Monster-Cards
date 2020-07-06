@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './App.css';
-import { render } from '@testing-library/react';
 
- class App extends React.Component{
-   constructor(){
-     super();
-     this.state={
-       monsters:[]
-     }
-   }
- }
-render(){
-  <div className='App'>
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      monsters: [],
+    };
+  }
 
-  </div>
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((response) => response.json())
+      .then((users) => this.setState({ monsters: users }))
+      .catch((err) => console.log('There was an error', err));
+  }
+  render() {
+    return (
+      <div className='App'>
+        {this.state.monsters.map((monsters) => (
+          <h1 key={monsters.id}>{monsters.name}</h1>
+        ))}
+      </div>
+    );
+  }
 }
 
 export default App;
