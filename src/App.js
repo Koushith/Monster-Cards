@@ -1,8 +1,20 @@
 import React from 'react';
 
 import './App.css';
-const App = () => {
-  return <h1>Hello- from basic</h1>;
-};
+import { render } from '@testing-library/react';
+
+ class App extends React.Component{
+   constructor(){
+     super();
+     this.state={
+       monsters:[]
+     }
+   }
+ }
+render(){
+  <div className='App'>
+
+  </div>
+}
 
 export default App;
