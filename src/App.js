@@ -1,28 +1,13 @@
-import React, { Component } from 'react';
-import { CardList } from './components/card-list/card-list.component';
+import React from 'react';
+
 import './App.css';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      monsters: [],
-    };
-  }
-
-  componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then((response) => response.json())
-      .then((users) => this.setState({ monsters: users }))
-      .catch((err) => console.log('There was an error', err));
-  }
-  render() {
-    return (
-      <div className='App'>
-        <CardList monsters={this.state.monsters} />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className='App'>
+      <h1>Hello World</h1>
+    </div>
+  );
 }
 
 export default App;
