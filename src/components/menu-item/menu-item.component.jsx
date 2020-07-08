@@ -1,5 +1,5 @@
-import react from 'react';
-import './menu-item.style.scss';
+import React from 'react';
+import './menu-item.styles.scss';
 
 // this is nothing but card on homepage
 const MenuItem = ({ title }) => {
