@@ -8,7 +8,7 @@ function Home() {
       <div className='home__container'>
         <img
           className='home__image'
-          src='https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Rajeshwari/september/GWbanners/HeroPC_1500x600_1._CB406681336_.jpg'
+          src='https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2020/X-site/Multititle/Aug/1500x600_Hero-Tall_ft._CB404804383_.jpg'
           alt=''
         />
         <div className='home_row'>
@@ -16,9 +16,9 @@ function Home() {
           <Product />
         </div>
         <div className='home_row'>
-          {/* Product */}
-          {/* Product */}
-          {/* Product */}
+          <Product />
+          <Product />
+          <Product />
         </div>
         <div className='home_row'>{/* Product */}</div>
       </div>
