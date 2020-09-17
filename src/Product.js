@@ -1,7 +1,7 @@
 import React from 'react';
 import './Product.css';
 
-function Product({ title, price, rating, image }) {
+function Product({ id, title, price, rating, image }) {
   return (
     <div className='product'>
       <div className='product__info'>
@@ -11,7 +11,11 @@ function Product({ title, price, rating, image }) {
           <small>Rs</small>
         </p>
         <div className='product__rating'>
-          <p>{rating}</p>
+          {Array(rating)
+            .fill()
+            .map((i) => (
+              <p>⭐</p>
+            ))}
         </div>
       </div>
 

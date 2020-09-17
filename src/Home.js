@@ -12,13 +12,46 @@ function Home() {
           alt=''
         />
         <div className='home_row'>
-          <Product />
+          <Product
+            id='123'
+            title='The Lean Startup'
+            image='https://images-na.ssl-images-amazon.com/images/I/41Um2UPO1yL._SX325_BO1,204,203,200_.jpg'
+            rating={5}
+            price='650'
+          />
+
+          <Product
+            id='124'
+            title='The Lean'
+            image='https://images-na.ssl-images-amazon.com/images/I/41Um2UPO1yL._SX325_BO1,204,203,200_.jpg'
+            rating={4}
+            price='650'
+          />
+
           <Product />
         </div>
         <div className='home_row'>
-          <Product />
-          <Product />
-          <Product />
+          <Product
+            id='5487'
+            title='The Lean'
+            image='https://images-na.ssl-images-amazon.com/images/I/41Um2UPO1yL._SX325_BO1,204,203,200_.jpg'
+            rating={4}
+            price='650'
+          />
+          <Product
+            id='655'
+            title='The Lean'
+            image='https://images-na.ssl-images-amazon.com/images/I/41Um2UPO1yL._SX325_BO1,204,203,200_.jpg'
+            rating={4}
+            price='650'
+          />
+          <Product
+            id='655'
+            title='The Lean'
+            image='https://images-na.ssl-images-amazon.com/images/I/41Um2UPO1yL._SX325_BO1,204,203,200_.jpg'
+            rating={4}
+            price='650'
+          />
         </div>
         <div className='home_row'>{/* Product */}</div>
       </div>

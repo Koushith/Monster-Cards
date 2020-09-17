@@ -36,3 +36,7 @@
   padding: 10px 20px;
   font-weight: bold;
 }
+
+.product__rating {
+  display: flex;
+}
